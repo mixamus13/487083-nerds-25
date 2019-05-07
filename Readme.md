@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Maksim Dokuchaev](https://up.htmlacademy.ru/htmlcss/25/user/487083).
-* Наставник: `Неизвестно`.
+* Наставник: [Maksim Dokuchaev](https://up.htmlacademy.ru/htmlcss/25/user/487083).
 
 ---
 
