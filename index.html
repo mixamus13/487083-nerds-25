@@ -17,7 +17,7 @@
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="basket-navigation">
-      <li class="basket-link">Корзина</li>
+      <li class="basket-link"><a href="basket.html">Корзина</a></li>
     </ul>
   </nav>
   <section class="slider"> <!--тут будет слайдер-->
@@ -69,5 +69,26 @@
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </div>
 </footer>
+<section class="modal modal-write-us">
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form class="write-us popup" action="https://echo.htmlacademy.ru" method="post">
+    <button class="popup-close" type="button">Закрыть</button>
+    <ul>
+      <li class="write-us-name">
+        <label for="popup-name">Ваше имя:</label>
+        <input class="visually-hidden" type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
+      </li>
+      <li class="write-us-email">
+        <label for="popup-email">Ваш e-mail:</label>
+        <input class="visually-hidden" type="email" name="email" id="popup-email" placeholder="email@example.com">
+      </li>
+      <li class="write-us-letter">
+        <label for="popup-letter">Текст письма:</label>
+        <textarea rows="5" cols="25" name="letter" id="popup-letter" placeholder="В свободной форме"></textarea>
+      </li>
+    </ul>
+    <button class="button-send" type="submit">Отправить</button>
+  </form>
+</section>
 </body>
 </html>
