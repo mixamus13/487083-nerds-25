@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
@@ -23,7 +26,7 @@
   <h1>Магазин готовых шаблонов</h1>
 </header>
 <main class="main-container">
-  <h2 class="visually-hiden">Готовые шаблоны сайтов</h2>
+  <h2 class="visually-hidden">Готовые шаблоны сайтов</h2>
   <section class="filters">
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -149,7 +152,7 @@
 </main>
 <footer class="main-footer">
   <div class="footer-social">
-    <ul>
+    <ul class="footer-social-items">
       <li><a class="social-button" href="#">Вконтакте</a></li>
       <li><a class="social-button" href="#">Фэйстбук</a></li>
       <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -161,17 +164,17 @@
   </div>
 </footer>
 <section class="modal modal-write-us">
-  <h2 class="visually-hidden">Напишите нам</h2>
+  <h2 class>Напишите нам</h2>
   <form class="write-us popup" action="https://echo.htmlacademy.ru" method="post">
     <button class="popup-close" type="button">Закрыть</button>
     <ul>
       <li class="write-us-name">
         <label for="popup-name">Ваше имя:</label>
-        <input class="visually-hidden" type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
+        <input type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
       </li>
       <li class="write-us-email">
         <label for="popup-email">Ваш e-mail:</label>
-        <input class="visually-hidden" type="email" name="email" id="popup-email" placeholder="email@example.com">
+        <input type="email" name="email" id="popup-email" placeholder="email@example.com">
       </li>
       <li class="write-us-letter">
         <label for="popup-letter">Текст письма:</label>

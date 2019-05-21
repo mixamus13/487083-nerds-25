@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
@@ -55,10 +58,45 @@
       </li>
     </ul>
   </section>
+  <section class="our-studio">
+    <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
+      рук, как роботы.</p>
+    <ul class="order-development">
+      <li class="order-development-item">Веб-сайтов любой сложности</li>
+      <li class="order-development-item">Мобильных приложений для iOS и Android</li>
+      <li class="order-development-item">Слайдшоу и видео для корпоративных презентаций</li>
+    </ul>
+  </section>
+  <section class="our-statistic">
+    <p class="our-statistic-logo">
+      <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип Нёрдс">
+    </p>
+    <p>с 2004 года Любим точность во всем:</p>
+    <ul class="our-statistic-numbers">
+      <li>146%</li>
+      <li>100%</li>
+      <li>50%</li>
+      <li>Уровень самоотдачи</li>
+      <li>Соблюдение сроков</li>
+      <li>Минимальная предоплата</li>
+    </ul>
+  </section>
+  <div class="brands-logo">
+    <ul class="brands-logo-list">
+      <li class="brands-logo-htmlacademy">Логотип аштимэльакадеми</li>
+      <li class="brands-logo-borodinski">Логотип бородински</li>
+      <li class="brands-logo-pink">Логотип пинк</li>
+      <li class=brands-logo-mishka">Логотип мишка</li>
+    </ul>
+  </div>
 </main>
 <footer class="main-footer">
+  <div class="main-footer-map">
+    
+  </div>
   <div class="footer-social">
-    <ul>
+    <ul class="footer-social-items">
       <li><a class="social-button" href="#">Вконтакте</a></li>
       <li><a class="social-button" href="#">Фэйстбук</a></li>
       <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -70,17 +108,17 @@
   </div>
 </footer>
 <section class="modal modal-write-us">
-  <h2 class="visually-hidden">Напишите нам</h2>
+  <h2>Напишите нам</h2>
   <form class="write-us popup" action="https://echo.htmlacademy.ru" method="post">
     <button class="popup-close" type="button">Закрыть</button>
     <ul>
       <li class="write-us-name">
         <label for="popup-name">Ваше имя:</label>
-        <input class="visually-hidden" type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
+        <input type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
       </li>
       <li class="write-us-email">
         <label for="popup-email">Ваш e-mail:</label>
-        <input class="visually-hidden" type="email" name="email" id="popup-email" placeholder="email@example.com">
+        <input type="email" name="email" id="popup-email" placeholder="email@example.com">
       </li>
       <li class="write-us-letter">
         <label for="popup-letter">Текст письма:</label>

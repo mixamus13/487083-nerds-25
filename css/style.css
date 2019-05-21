@@ -8,3 +8,92 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*------------------------index.html-----------------------------*/
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.site-navigation,
+.basket-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.basket-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.basket-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.basket-navigation a:focus {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.services-item p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: initial;
+}
+
+.footer-social-items {
+  list-style: none;
+}
+
+.footer-social-items a {
+  color: #000000;
+}
+
+.footer-friend b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: initial;
+}
+
+.footer-friend p {
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: initial;
+}
+
+.modal {
+  display: none; /*POPUP*/
+}
+
+/*------------------------catalog.html-----------------------------*/
+
