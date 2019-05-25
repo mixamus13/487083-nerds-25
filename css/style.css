@@ -44,6 +44,7 @@ a {
   margin: 0;
   padding: 0;
   min-height: 545px;
+  margin-bottom: 80px;
 }
 
 .main-navigation {
@@ -138,6 +139,45 @@ a {
   border-bottom: 2px solid #fb565a;
 }
 
+.services {
+  margin-bottom: 162px;
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item-text {
+  margin: 0;
+  padding: 0;
+  width: 245px;
+  margin-bottom: 30px;
+}
+
+.services-item-image,
+.services-item h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.services-item-image {
+  margin-bottom: 18px;
+}
+
+.services-item h3 {
+  margin-bottom: 16px;
+}
+
+.web-site {
+  margin-right: 100px;
+}
+
+.application {
+  margin-right: 100px;
+}
+
 .services-list {
   list-style: none;
 
@@ -213,6 +253,28 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.index-columns {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 124px;
+}
+
+/*.index-columns,*/
+/*.our-statistic {*/
+/*  border: 1px solid red;*/
+/*}*/
+
+.our-studio {
+  width: 650px;
+}
+
+.order-development {
+  margin: 0;
+  padding: 0;
+}
+
 .index-columns h2 {
   font-size: 45px;
   line-height: 45px;
@@ -241,8 +303,22 @@ a {
   list-style: none;
 }
 
+.our-statistic {
+  width: 360px;
+}
+
 .our-statistic-numbers {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.our-statistic-skills {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .our-statistic-rating {
@@ -259,7 +335,10 @@ a {
 }
 
 .brands-logo-list {
+  display: flex;
   list-style: none;
+  justify-content: space-between;
+  margin-bottom: 126px;
 }
 
 .button-contacts {
@@ -303,6 +382,21 @@ a {
   text-transform: initial;
 }
 
+.social-friend {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-items {
+  display: flex;
+}
+
+.footer-friend p {
+  color: #444444;
+}
+
 .modal {
   display: none; /*POPUP*/
 }
@@ -315,6 +409,10 @@ a {
   font-weight: 500;
   text-align: center;
   text-transform: initial;
+}
+
+.main-header-catalog {
+  min-height: 355px;
 }
 
 .filter-button {
@@ -332,4 +430,24 @@ a {
 .filter-button:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.main-container {
+  display: flex;
+}
+
+.catalog-item {
+  margin: 20px;
+  list-style: none;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-items {
+  list-style: none;
 }

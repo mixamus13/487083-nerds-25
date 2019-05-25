@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header main-header-catalog">
   <div class="container">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -25,7 +25,7 @@
   </div>
   <h1>Магазин готовых шаблонов</h1>
 </header>
-<main class="main-container">
+<main class="main-container container">
   <h2 class="visually-hidden">Готовые шаблоны сайтов</h2>
   <section class="filters">
     <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -34,11 +34,8 @@
         <legend>Стоимость:</legend>
       </fieldset>
       <fieldset>
-        <legend>Сортировать:</legend>
-      </fieldset>
-      <fieldset>
         <legend>Сетка:</legend>
-        <ul>
+        <ul class="filter-items">
           <li class="filter-option">
             <input class="filter-input" type="radio" name="filter-grid" id="filter-adaptation"
                    value="adaptation" checked>
@@ -57,7 +54,7 @@
       </fieldset>
       <fieldset>
         <legend>Особенности:</legend>
-        <ul>
+        <ul class="filter-items">
           <li class="filter-option">
             <input class="filter-input" type="checkbox" name="feature" id="filter-slider" value="slider"
                    checked>
@@ -89,6 +86,9 @@
     </form>
   </section>
   <section class="catalog">
+    <fieldset>
+      <legend>Сортировать:</legend>
+    </fieldset>
     <h2 class="visually-hidden">Список готовых сайтов</h2>
     <ul class="catalog-list">
       <li class="catalog-item">
@@ -164,16 +164,20 @@
       <button type="submit" class="button button-contacts">Напишите нам</button>
     </div>
   </section>
-  <div class="footer-social">
-    <ul class="footer-social-items">
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фэйстбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
-    </ul>
-  </div>
-  <div class="footer-friend">
-    <b>Давайте дружить, это выгодно!</b>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+  <div class="container">
+    <div class="social-friend">
+      <div class="footer-social">
+        <ul class="footer-social-items">
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фэйстбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="footer-friend">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
   </div>
 </footer>
 <section class="modal modal-write-us">
