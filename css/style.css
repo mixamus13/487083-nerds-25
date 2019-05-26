@@ -27,7 +27,19 @@ body {
   color: #000000;
   text-transform: uppercase;
 }
+/*
+body > * {
+  background: rgba(055, 200, 100, 0.3);
+}
 
+body > * > * {
+  background: rgba(100, 100, 255, 0.3);
+}
+
+body > * > * > * {
+  background: rgba(255, 255, 255, 0.3);
+}
+*/
 a {
   text-decoration: none;
 }
@@ -353,6 +365,16 @@ a {
   font-weight: 700;
 }
 
+.main-footer-contacts {
+  position: relative;
+  bottom: 362px;
+  right: 425px;
+  background: #ffffff;
+  width: 319px;
+  height: 308px;
+  padding: 49px;
+}
+
 .contacts {
   font-size: 16px;
   line-height: 18px;
@@ -362,6 +384,7 @@ a {
 }
 
 .footer-social-items {
+
   list-style: none;
 }
 
@@ -387,10 +410,49 @@ a {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  margin-top: -200px;
 }
 
 .footer-social-items {
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.social:hover {
+  background-color: #e74246;
+}
+
+.social:focus,
+.social:active{
+  background-color: #d7373b;
+}
+
+.social-vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 25px 32px;
+}
+
+.social-fb {
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 33px 30px;
+}
+
+.social-insta {
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
 }
 
 .footer-friend p {
