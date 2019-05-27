@@ -366,7 +366,7 @@ a {
 }
 
 .main-footer-contacts {
-  position: relative;
+  position: relative; /*transform: translateX(-405px) translateY(-360px); ВАРИАНТ*/
   bottom: 362px;
   right: 425px;
   background: #ffffff;
@@ -375,16 +375,35 @@ a {
   padding: 49px;
 }
 
+.main-footer-contacts h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
 .contacts {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: initial;
   color: #666666;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.tel {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: initial;
+  color: #666666;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 37px;
 }
 
 .footer-social-items {
-
   list-style: none;
 }
 
@@ -420,7 +439,9 @@ a {
 }
 
 .social {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 79px;
   height: 79px;
   background-color: #e1e1e1;
@@ -433,26 +454,13 @@ a {
 }
 
 .social:focus,
-.social:active{
+.social:active {
   background-color: #d7373b;
 }
 
-.social-vk {
-  background-image: url("../img/vk-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 25px 32px;
-}
-
-.social-fb {
-  background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 33px 30px;
-}
-
-.social-insta {
-  background-image: url("../img/insta-icon.svg");
-  background-repeat: no-repeat;
-  background-position: 30px 30px;
+.social:focus path,
+.social:active path {
+  fill: rgba(213, 121, 121);
 }
 
 .footer-friend p {
