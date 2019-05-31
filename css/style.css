@@ -60,6 +60,7 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
+  background-color: #eeeeee;
 }
 
 .navigation {
@@ -131,8 +132,7 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  margin-top: 54px;
+  margin-top: 75px;
 }
 
 .site-navigation,
@@ -161,7 +161,7 @@ a {
   background-color: #eeeeee;
 }
 
-.slider-controls i {
+.slider-controls label {
   position: relative;
   display: inline-block;
   width: 18px;
@@ -171,7 +171,7 @@ a {
   padding: 17px;
 }
 
-.slider-controls i::after {
+.slider-controls label::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -186,7 +186,7 @@ a {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 104px;
+  bottom: 105px;
   z-index: 100;
   width: 160px;
   height: 18px;
@@ -195,7 +195,33 @@ a {
   transform: translateX(-50%);
 }
 
-.slider-controls .active::before {
+.slider-list {
+  margin: 0;
+  padding: 0;
+  margin-top: -10px; /*времено*/
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 84px 0;
+}
+
+#slider-iphone:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#slider-imac:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#slider-ipad:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#slider-iphone:checked ~ .slider-controls .slider-controls-item-iphone::before,
+#slider-imac:checked ~ .slider-controls .slider-controls-item-imac::before,
+#slider-ipad:checked ~ .slider-controls .slider-controls-item-ipad::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -209,31 +235,29 @@ a {
   border-radius: 50%;
 }
 
-.slider-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.slider-item {
-  display: none;
-  padding: 78px 0 80px 0;
-}
-
 .slider-item:nth-child(1) {
-  display: block;
-}
-
-.slider-item:nth-child(1) {
-  background-image: url(../img/slide-picture1.png);
+  background-image: url(../img/slide-iphone.png);
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 432px 18px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url(../img/slide-imac.png);
+  background-repeat: no-repeat;
+  background-position: 496px 2px;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url(../img/slide-ipad.png);
+  background-repeat: no-repeat;
+  background-position: 402px 21px;
 }
 
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
   margin-bottom: 27px;
+  /*margin-top: -10px;*/
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -243,7 +267,7 @@ a {
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -599,6 +623,7 @@ a {
 }
 
 /*------------------------catalog.html-----------------------------*/
+
 
 .main-header h1 {
   font-size: 55px;
