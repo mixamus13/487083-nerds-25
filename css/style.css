@@ -824,14 +824,11 @@ a {
   height: 25px;
   top: -3px;
   left: -35px;
-  background-image: url("../img/radio-off.svg");
+  background-image: url("../img/radio-off-dark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
-
-/*.filter-input-radio:hover + label::before {*/
-/*  background-image: url("../img/radio-on-dark.svg");*/
-/*}*/
 
 .filter-input-radio:checked + label::after {
   content: "";
@@ -840,9 +837,17 @@ a {
   height: 25px;
   top: -3px;
   left: -35px;
-  background-image: url("../img/radio-on.svg");
+  background-image: url("../img/radio-on-dark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-radio:hover + label::before,
+.filter-input-radio:hover + label::after,
+.filter-input-radio:focus + label::before,
+.filter-input-radio:focus + label::after{
+  opacity: 1;
 }
 
 .filter-input-checkbox + label::before {
@@ -852,9 +857,10 @@ a {
   height: 23px;
   top: -2px;
   left: -35px;
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url(../img/checkbox-off-dark.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -864,9 +870,17 @@ a {
   height: 26px;
   top: -2px;
   left: -35px;
-  background-image: url(../img/checkbox-on-light.svg);
+  background-image: url(../img/checkbox-on-dark.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:hover + label::after,
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus + label::after {
+  opacity: 1;
 }
 
 .main-footer-map {
