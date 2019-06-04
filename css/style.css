@@ -584,7 +584,7 @@ a {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 126px;
+  margin-bottom: 119px;
   position: relative;
 }
 
@@ -676,9 +676,7 @@ a {
 }
 
 .button-contacts {
-  background-color: #fb565a;
-  padding-left: 45px;
-  padding-right: 45px;
+  width: 222px;
 }
 
 .main-footer-contacts h3 {
@@ -688,11 +686,11 @@ a {
 }
 
 .main-footer-contacts {
-  position: relative; /*transform: translateX(-405px) translateY(-360px); ВАРИАНТ*/
-  bottom: 362px;
-  right: 425px;
+  position: relative;
+  bottom: 159px;
+  right: 420px;
   background: #ffffff;
-  width: 319px;
+  width: 320px;
   height: 308px;
   padding: 49px;
 }
@@ -700,7 +698,7 @@ a {
 .main-footer-contacts h3 {
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
 }
 
 .contacts {
@@ -712,6 +710,7 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  margin-left: 3px;
 }
 
 .tel {
@@ -719,6 +718,7 @@ a {
   line-height: 18px;
   font-weight: 400;
   text-transform: initial;
+  letter-spacing: 0.4px;
   color: #666666;
   margin: 0;
   padding: 0;
@@ -750,15 +750,16 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: -200px;
+  margin-top: -29px;
+  margin-bottom: 70px;
 }
 
 .footer-social-items {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-right: 126px;
-
+  margin-right: 127px;
+  margin-top: -5px;
 }
 
 .social {
@@ -787,6 +788,9 @@ a {
 }
 
 .footer-friend p {
+  margin: 0;
+  padding: 0;
+  margin-top: 11px;
   color: #444444;
 }
 
@@ -1052,6 +1056,21 @@ a {
 .main-footer-map {
   display: flex;
   justify-content: center;
+  margin-bottom: -204px;
+  position: relative;
+}
+
+.main-footer-map::after {
+  content: "";
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  top: 89px;
+  right: 508px;
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .pagination-list {
@@ -1071,7 +1090,6 @@ a {
   padding: 0;
   padding: 10px 18px;
   margin-right: 11px;
-
 }
 
 .pagination-item a {
