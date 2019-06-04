@@ -410,7 +410,7 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 124px;
+  margin-bottom: 141px;
 }
 
 .our-studio {
@@ -508,6 +508,7 @@ a {
 }
 
 .our-statistic {
+  letter-spacing: 0.12px;
   margin: 0;
   padding: 0;
 }
@@ -573,13 +574,92 @@ a {
   text-transform: initial;
 }
 
+.brands-logo-items {
+  position: relative;
+}
+
 .brands-logo-list {
   display: flex;
   list-style: none;
+  text-align: center;
   margin: 0;
   padding: 0;
-  justify-content: space-around;
   margin-bottom: 126px;
+  position: relative;
+}
+
+.brands-logo-list::before {
+  content: "";
+  width: 1160px;
+  height: 2px;
+  top: -63px;
+  left: 1px;
+  position: absolute;
+  border-top: 2px solid #f3f3f3;
+}
+
+.brands-logo-list::after {
+  content: "";
+  width: 1160px;
+  height: 2px;
+  bottom: -39px;
+  left: 1px;
+  position: absolute;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.brands-logo-htmlacademy {
+  margin-left: 32px;
+  margin-right: 97px;
+}
+
+.brands-logo-items::before {
+  content: "";
+  width: 2px;
+  height: 52px;
+  top: 2px;
+  left: 280px;
+  position: absolute;
+  border-right: 2px solid #f3f3f3;
+}
+
+.brands-logo-items::after {
+  content: "";
+  width: 2px;
+  height: 52px;
+  top: 2px;
+  right: 278px;
+  position: absolute;
+  border-right: 2px solid #f3f3f3;
+}
+
+.container-middle {
+  position: relative;
+}
+
+.container-middle::before {
+  content: "";
+  width: 2px;
+  height: 52px;
+  top: 1px;
+  right: 599px;
+  position: absolute;
+  border-right: 2px solid #f3f3f3;
+}
+
+.brands-logo-borodinski {
+  margin-right: 101px;
+  margin-top: -16px;
+}
+
+.brands-logo-pink {
+  margin-right: 122px;
+  margin-top: 3px;
+}
+
+.brands-logo-mishka {
+  margin-right: 0;
+  margin-top: -10px;
 }
 
 .brands-logo {
