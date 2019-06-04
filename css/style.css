@@ -701,6 +701,18 @@ a {
   margin-bottom: 23px;
 }
 
+.main-footer-map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -400px;
+}
+
+.main-footer-map-marker {
+  position: relative;
+  right: -681px;
+  bottom: -76px;
+}
+
 .contacts {
   font-size: 16px;
   line-height: 18px;
@@ -759,7 +771,8 @@ a {
   margin: 0;
   padding: 0;
   margin-right: 127px;
-  margin-top: -5px;
+  margin-top: -6px;
+  margin-left: -19px;
 }
 
 .social {
@@ -1051,26 +1064,6 @@ a {
 .filter-input-checkbox:focus + label::before,
 .filter-input-checkbox:focus + label::after {
   opacity: 1;
-}
-
-.main-footer-map {
-  display: flex;
-  justify-content: center;
-  margin-bottom: -204px;
-  position: relative;
-}
-
-.main-footer-map::after {
-  content: "";
-  position: absolute;
-  width: 231px;
-  height: 190px;
-  top: 89px;
-  right: 508px;
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
 }
 
 .pagination-list {
