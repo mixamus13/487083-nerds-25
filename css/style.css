@@ -154,6 +154,20 @@ a {
   opacity: 0.3;
 }
 
+.site-navigation-current  {
+  position: relative;
+}
+
+.site-navigation-current::before {
+  content: "";
+  position: absolute;
+  right: 1px;
+  bottom: -5px;
+  left: 1px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
 /*----------------------------slider--------------------------*/
 
 .slider {
