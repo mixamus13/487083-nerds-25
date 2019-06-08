@@ -33,7 +33,7 @@
     <h2 class="visually-hidden">Фильтр товаров</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset class="filter-items">
-        <legend>Стоимость:</legend>
+        <legend class="cost">Стоимость:</legend>
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
@@ -49,7 +49,7 @@
         </div>
       </fieldset>
       <fieldset class="filter-items">
-        <legend>Сетка:</legend>
+        <legend class="grid-layout">Сетка:</legend>
         <ul class="filter-list">
           <li class="filter-option">
             <input class="filter-input-radio visually-hidden" type="radio" name="filter-grid" id="filter-adaptation"
@@ -69,7 +69,7 @@
         </ul>
       </fieldset>
       <fieldset class="filter-items">
-        <legend>Особенности:</legend>
+        <legend class="feature">Особенности:</legend>
         <ul class="filter-list">
           <li class="filter-option">
             <input class="filter-input-checkbox visually-hidden" type="checkbox" name="feature" id="filter-slider"
@@ -105,20 +105,23 @@
     </form>
   </section>
   <section class="catalog">
-    <fieldset class="filter-items">
-      <legend>Сортировать:</legend>
+    <div class="sorty-filter">
+      <h2>Сортировать:</h2>
       <ul class="control-list">
         <li class="control-price">По цене</li>
         <li class="control-type">По типу</li>
-        <li class="control-appointment">По назначению</li>
-        <li class="control-down">Вниз</li>
-        <li class="control-up">Верх</li>
+        <li class="control-appointment">По названию</li>
+        <li class="control-down"><a href="#"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
+        <li class="control-up"><a href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
       </ul>
-    </fieldset>
+    </div>
     <h2 class="visually-hidden">Список готовых сайтов</h2>
     <ul class="catalog-list">
       <li class="catalog-item">
         <h3 class="visually-hidden">Сайт Седона</h3>
+        <p class="sedona-image">
+          <img src="img/browser.svg" width="360" height="40" alt="sedona-image">
+        </p>
         <p class="catalog-item-image">
           <a href="catalog.html">
             <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Сайт Седона">
@@ -127,6 +130,9 @@
       </li>
       <li class="catalog-item">
         <h3 class="visually-hidden">Сайт Пинк</h3>
+        <p class="pink-image">
+          <img src="img/browser.svg" width="360" height="40" alt="pink-image">
+        </p>
         <p class="catalog-item-image">
           <a href="catalog.html">
             <img src="img/img-pink-jpg.png" width="360" height="576" alt="Сайт Пинк">
@@ -135,6 +141,9 @@
       </li>
       <li class="catalog-item">
         <h3 class="visually-hidden">Сайт Бородинский</h3>
+        <p class="borodinski-image">
+          <img src="img/browser.svg" width="360" height="40" alt="borodinski-image">
+        </p>
         <p class="catalog-item-image">
           <a href="catalog.html">
             <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="Сайт Бородинский">
@@ -143,6 +152,9 @@
       </li>
       <li class="catalog-item">
         <h3 class="visually-hidden">Сайт Мишка</h3>
+        <p class="mishka-image">
+          <img src="img/browser.svg" width="360" height="40" alt="miska-image">
+        </p>
         <p class="catalog-item-image">
           <a href="catalog.html">
             <img src="img/img-mishka-jpg.png" width="360" height="576" alt="Сайт Мишка">
@@ -150,6 +162,9 @@
         </p>
       </li>
       <li class="catalog-item">
+        <p class="aplus-image">
+          <img src="img/browser.svg" width="360" height="40" alt="aplus-image">
+        </p>
         <h3 class="visually-hidden">Сайт А плюс</h3>
         <p class="catalog-item-image">
           <a href="catalog.html">
@@ -158,6 +173,9 @@
         </p>
       </li>
       <li class="catalog-item">
+        <p class="kvast-image">
+          <img src="img/browser.svg" width="360" height="40" alt="kvast-image">
+        </p>
         <h3 class="visually-hidden">Сайт Кваст</h3>
         <p class="catalog-item-image">
           <a href="catalog.html">
