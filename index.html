@@ -195,23 +195,23 @@
   <h2>Напишите нам</h2>
   <form class="write-us popup" action="https://echo.htmlacademy.ru" method="post">
     <button class="modal-close" type="button">Закрыть</button>
-    <ul class="information">
-      <li class="write-us-name">
-        <label for="popup-name">Ваше имя:</label>
-        <input type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
-      </li>
-      <li class="write-us-email">
+    <div class="information">
+      <div class="write-us-name">
+        <label class="write-label" for="popup-name">Ваше имя:</label>
+        <input class="write-us-name-text colortext" type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
+      </div>
+      <div class="write-us-email">
         <label for="popup-email">Ваш e-mail:</label>
-        <input type="email" name="email" id="popup-email" placeholder="email@example.com">
-      </li>
-    </ul>
-    <ul>
-      <li class="write-us-letter">
+        <input class="write-us-email-text colortext" type="email" name="email" id="popup-email" placeholder="email@example.com">
+      </div>
+    </div>
+    <div>
+      <div class="write-us-letter">
         <label for="popup-letter">Текст письма:</label>
-        <textarea rows="5" cols="25" type="text" name="letter" id="popup-letter"
+        <textarea class="write-us-letter-text colortext" rows="5" cols="25" name="text" id="popup-letter"
                   placeholder="В свободной форме"></textarea>
-      </li>
-    </ul>
+      </div>
+    </div>
   </form>
   <button class="button button-send" type="submit">Отправить</button>
 </section>

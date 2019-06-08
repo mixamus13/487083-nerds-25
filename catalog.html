@@ -62,7 +62,8 @@
             <label for="filter-fixation">Фиксированная</label>
           </li>
           <li class="filter-option">
-            <input class="filter-input-radio visually-hidden" type="radio" name="filter-grid" id="filter-rubber" value="rubber">
+            <input class="filter-input-radio visually-hidden" type="radio" name="filter-grid" id="filter-rubber"
+                   value="rubber">
             <label for="filter-rubber">Резиновая</label>
           </li>
         </ul>
@@ -71,17 +72,20 @@
         <legend>Особенности:</legend>
         <ul class="filter-list">
           <li class="filter-option">
-            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="feature" id="filter-slider" value="slider"
+            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="feature" id="filter-slider"
+                   value="slider"
                    checked>
             <label for="filter-slider">Слайдер</label>
           </li>
           <li class="filter-option">
-            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="feature" id="filter-block-advantage"
+            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="feature"
+                   id="filter-block-advantage"
                    value="block-advantage">
             <label for="filter-block-advantage">Блок преимуществ</label>
           </li>
           <li class="filter-option">
-            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="feature" id="filter-news" value="news"
+            <input class="filter-input-checkbox visually-hidden" type="checkbox" name="feature" id="filter-news"
+                   value="news"
                    checked>
             <label for="filter-news">Новости</label>
           </li>
@@ -218,25 +222,28 @@
   </div>
 </footer>
 <section class="modal modal-write-us">
-  <h2 class>Напишите нам</h2>
+  <h2>Напишите нам</h2>
   <form class="write-us popup" action="https://echo.htmlacademy.ru" method="post">
-    <button class="popup-close" type="button">Закрыть</button>
-    <ul>
-      <li class="write-us-name">
-        <label for="popup-name">Ваше имя:</label>
-        <input type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
-      </li>
-      <li class="write-us-email">
+    <button class="modal-close" type="button">Закрыть</button>
+    <div class="information">
+      <div class="write-us-name">
+        <label class="write-label" for="popup-name">Ваше имя:</label>
+        <input class="write-us-name-text" type="text" name="name" id="popup-name" placeholder="Имя Фамилия">
+      </div>
+      <div class="write-us-email">
         <label for="popup-email">Ваш e-mail:</label>
-        <input type="email" name="email" id="popup-email" placeholder="email@example.com">
-      </li>
-      <li class="write-us-letter">
+        <input class="write-us-email-text" type="email" name="email" id="popup-email" placeholder="email@example.com">
+      </div>
+    </div>
+    <div>
+      <div class="write-us-letter">
         <label for="popup-letter">Текст письма:</label>
-        <textarea rows="5" cols="25" name="letter" id="popup-letter" placeholder="В свободной форме"></textarea>
-      </li>
-    </ul>
-    <button class="button-send" type="submit">Отправить</button>
+        <textarea class="write-us-letter-text" rows="5" cols="25" name="text" id="popup-letter"
+                  placeholder="В свободной форме"></textarea>
+      </div>
+    </div>
   </form>
+  <button class="button button-send" type="submit">Отправить</button>
 </section>
 </body>
 </html>

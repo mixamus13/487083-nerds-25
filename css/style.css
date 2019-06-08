@@ -822,12 +822,17 @@ a {
 }
 
 .modal {
-  /*display: none; !*POPUP*!*/
+  display: none; /*POPUP*/
   position: fixed;
   top: 115px;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
+}
+
+.write-us-name-text:invalid,
+.write-us-email-text:invalid {
+  border: 2px solid #e74246;
 }
 
 .modal-write-us {
@@ -838,7 +843,7 @@ a {
   z-index: 100;
   padding-top: 68px;
   padding-bottom: 84px;
-  padding-left: 97px;
+  padding-left: 99px;
   padding-right: 100px;
   margin-left: -480px;
 }
@@ -850,11 +855,13 @@ a {
   text-transform: initial;
   margin: 0;
   padding: 0;
-  padding-top: -4px;
-  margin-bottom: 42px;
+  /*padding-top: -4px;*/
+  margin-bottom: 41px;
 }
 
-.modal-write-us li {
+.write-us-name,
+.write-us-email,
+.write-us-letter {
   list-style: none;
   font-size: 16px;
   line-height: 18px;
@@ -862,9 +869,9 @@ a {
   text-transform: initial;
 }
 
-.write-us input[type="text"],
-.write-us input[type="email"],
-.write-us textarea[type="text"] {
+.write-us-name-text,
+.write-us-email-text,
+.write-us-letter-text {
   box-sizing: border-box;
   width: 360px;
   padding: 0;
@@ -877,17 +884,46 @@ a {
   line-height: 18px;
   font-weight: 400;
   text-transform: initial;
-  color: rgba(68, 68, 68, 0.5);
+  /*color: rgba(68, 68, 68, 0.5);*/
   border: 2px solid #d7dcde;
   border-radius: 3px;
+}
+
+.write-us-name-text:hover,
+.write-us-email-text:hover,
+.write-us-letter-text:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.write-us-name-text:focus,
+.write-us-email-text:focus,
+.write-us-letter-text:focus,
+.write-us-name-text:active,
+.write-us-email-text:active,
+.write-us-letter-text:active {
+  border: 2px solid #000000;
 }
 
 .write-us-name {
   margin-right: 40px;
 }
 
-.write-us textarea[type="text"] {
+.write-us-name input {
+  margin-top: 7px;
+}
+
+.write-us-email input {
+  margin-top: 7px;
+}
+
+.write-us-letter textarea {
+  margin-top: 9px;
+}
+
+.write-us-letter-text {
   width: 760px;
+  padding: 13px 12px 13px 17px;
+  resize: none;
 }
 
 .write-us ul:last-child {
@@ -903,35 +939,34 @@ a {
 }
 
 .write-us-letter {
-  margin-bottom: 41px;
+  margin-bottom: 43px;
+}
+
+.button-send {
+  width: 260px;
 }
 
 .modal-close {
   position: absolute;
-  top: 78px;
-  right: 105px;
+  content: "";
+  top: 80px;
+  right: 90px;
   width: 21px;
   height: 21px;
+  background: url("../img/close-cross.svg") no-repeat 0 0;
   font-size: 0;
   border: none;
   cursor: pointer;
+  opacity: 0.3;
 }
 
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 4px;
-  background-color: #fb565a;
+.modal-close:hover {
+  opacity: 1;
 }
 
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
+.modal-close:focus,
+.modal-close:active {
+  opacity: 0.1;
 }
 
 /*------------------------catalog.html-----------------------------*/
