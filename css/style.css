@@ -30,24 +30,9 @@ body {
   text-transform: uppercase;
 }
 
-/*
-body > * {
-  background: rgba(055, 200, 100, 0.3);
-}
-
-body > * > * {
-  background: rgba(100, 100, 255, 0.3);
-}
-
-body > * > * > * {
-  background: rgba(255, 255, 255, 0.3);
-}
-*/
 a {
   text-decoration: none;
 }
-
-/*------------------------index.html-----------------------------*/
 
 .container {
   width: 1200px;
@@ -168,8 +153,6 @@ a {
   background-color: #fb565a;
 }
 
-/*----------------------------slider--------------------------*/
-
 .slider {
   position: relative;
   background-color: #eeeeee;
@@ -212,7 +195,7 @@ a {
 .slider-list {
   margin: 0;
   padding: 0;
-  margin-top: -10px; /*времено*/
+  margin-top: -10px;
   list-style: none;
 }
 
@@ -329,7 +312,6 @@ a {
 
 .services-list {
   list-style: none;
-
 }
 
 .services-item h3 {
@@ -824,7 +806,7 @@ a {
 }
 
 .modal {
-  display: none; /*POPUP*/
+  display: none;
   position: fixed;
   top: 115px;
   color: #000000;
@@ -861,7 +843,6 @@ a {
   text-transform: initial;
   margin: 0;
   padding: 0;
-  /*padding-top: -4px;*/
   margin-bottom: 41px;
 }
 
@@ -890,7 +871,6 @@ a {
   line-height: 18px;
   font-weight: 400;
   text-transform: initial;
-  /*color: rgba(68, 68, 68, 0.5);*/
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
@@ -975,9 +955,6 @@ a {
   opacity: 0.1;
 }
 
-/*------------------------catalog.html-----------------------------*/
-
-
 .main-header h1 {
   font-size: 55px;
   line-height: 55px;
@@ -1014,9 +991,6 @@ a {
   display: flex;
 }
 
-.sorty {
-
-}
 
 .filters {
   margin-right: 52px;
@@ -1029,7 +1003,6 @@ a {
   margin-right: 40px;
   margin-bottom: 32px;
 }
-
 
 .catalog-item-image {
   margin: 0;
@@ -1424,4 +1397,66 @@ a {
   border: solid 2px #dbdbdb;
   padding: 9px 17px;
   background-color: #ffffff;
+}
+
+.sedona-cost,
+.pink-cost,
+.borodinski-cost,
+.mishka-cost,
+.aplus-cost,
+.kvast-cost {
+  content: "";
+  position: relative;
+  width: 360px;
+  height: 231px;
+  background-color: #eeeeee;
+  top: -238px;
+  left: 0px;
+  /*display: none;*/
+}
+
+.cost-app {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 43px;
+  padding-right: 67px;
+  padding-left: 67px;
+}
+
+.cost-app h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  margin-top: -8px;
+}
+
+.cost-app h3:hover {
+  color: #fb565a;
+}
+
+.cost-app h3:focus,
+.cost-app h3:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cost-app button {
+  margin-left: 10px;
+}
+
+.cost-app-text {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+  text-transform: initial;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  width: 227px;
+}
+
+.button-cost {
+  width: 200px;
 }
