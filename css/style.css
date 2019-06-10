@@ -1001,7 +1001,7 @@ a {
   padding: 0;
   list-style: none;
   margin-right: 40px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .catalog-item-image {
@@ -1059,7 +1059,7 @@ a {
 .sorty-filter {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   margin-top: 3px;
 }
 
@@ -1411,8 +1411,17 @@ a {
   height: 231px;
   background-color: #eeeeee;
   top: -238px;
-  left: 0px;
-  /*display: none;*/
+  left: 0;
+  display: none;
+}
+
+.catalog-item-image:hover .sedona-cost,
+.catalog-item-image:hover .pink-cost,
+.catalog-item-image:hover .borodinski-cost,
+.catalog-item-image:hover .mishka-cost,
+.catalog-item-image:hover .aplus-cost,
+.catalog-item-image:hover .kvast-cost {
+  display: block;
 }
 
 .cost-app {
@@ -1429,7 +1438,7 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 18px;
-  margin-top: -8px;
+  margin-top: -4px;
 }
 
 .cost-app h3:hover {
@@ -1442,7 +1451,7 @@ a {
 }
 
 .cost-app button {
-  margin-left: 10px;
+  margin-left: 13px;
 }
 
 .cost-app-text {
@@ -1455,6 +1464,13 @@ a {
   padding: 0;
   margin-bottom: 32px;
   width: 227px;
+}
+
+.cost-app-text-sedona,
+.cost-app-text-borodinski,
+.cost-app-text-mishka {
+  width: 199px;
+  margin-left: 13px;
 }
 
 .button-cost {
